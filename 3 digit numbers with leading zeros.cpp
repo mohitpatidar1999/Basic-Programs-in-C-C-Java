@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,i;
+	printf("Enter starting point and ending point\n");
+	scanf("%d%d",&a,&b);
+	if(a<b)
+	{
+		if(a>0&&a<=9)
+				{
+					for(i=a;i<9;i++)
+						printf("00%d\n",i);
+					for(i=10;i<=99;i++)
+						printf("0%d\n",i);
+					for(i=100;i<=999;i++)
+						printf("%d\n",i);
+				}
+				if(a>9&&a<=99)
+					{
+						for(i=a;i<=99;i++)
+							printf("0%d\n",i);
+						for(i=100;i<=999;i++)
+							printf("%d\n",i);
+					}
+				if(a>99&&a<=999)
+					for(i=a;i<=999;i++)		
+					printf("%d\n",i);
+	}
+	else
+	{
+				if(a>0&&a<=9)
+				{
+					for(i=a;i<9;i++)
+						printf("00%d\n",i);
+					for(i=10;i<=99;i++)
+						printf("0%d\n",i);
+					for(i=100;i<=999;i++)
+						printf("%d\n",i);
+				}
+				if(a>9&&a<=99)
+					{
+						for(i=a;i<=99;i++)
+							printf("0%d\n",i);
+						for(i=100;i<=999;i++)
+							printf("%d\n",i);
+					}
+				if(a>99&&a<=999)
+					for(i=a;i<=999;i++)		
+					printf("%d\n",i);
+	}
+		for(i=0;i<=b;i++)
+		{
+			if(a>0&&b<=9)
+			{
+				printf("00%d\n",i);
+			}	
+			else
+			{
+				if(a>0&&b<=99)
+				printf("0%d\n",i);
+				else 
+				{
+					if(a>0&&b<=999)
+					printf("%d\n",i);
+				}
+			}
+		}
+
+getch();
+}
