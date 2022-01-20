@@ -16,6 +16,8 @@ int fact(int f)
 {
 	int i;
 	for(i=f-1;i>=1;i--)
-	{f=f*i;}
+	{
+	  f=f*i;
+	}
 	return(f);
 }
