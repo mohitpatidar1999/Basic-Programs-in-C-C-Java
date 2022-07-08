@@ -16,3 +16,17 @@ public class Main
 		}
 	}
 }
+
+//OR
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter number to convert into binary");
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	    System.out.println(Integer.toBinaryString(n));
+	}
+}
