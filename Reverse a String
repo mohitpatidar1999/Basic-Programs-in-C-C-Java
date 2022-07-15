@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Enter any string");
+		Scanner sc = new Scanner(System.in);
+		String s=sc.next();
+		char []a=s.toCharArray();
+		Arrays.sort(a);
+		
+		String st=new String(a);
+	    System.out.println("Sorted string is: "+st);
+	}
+}
